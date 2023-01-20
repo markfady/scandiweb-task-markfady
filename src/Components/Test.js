@@ -40,8 +40,9 @@ function Test(){
         return <Cards key={character.id}
         image={character.gallery}
         name={character.name}
-         data={character}    // passing the data(selected products)to the action payload of addtocart action
-        // price={character.price} 
+        data={character}    // passing the data(selected products)to the action payload of addtocart action
+        price={character.prices[0].amount}
+        symbol={character.prices[0].currency.symbol} 
         /> 
         }
       )}
