@@ -1,3 +1,4 @@
+/* start of global  */
 .App {
   text-align: center;
 }
@@ -12,7 +13,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,6 +27,58 @@
 .App-link {
   color: #61dafb;
 }
+.container{
+    padding: 0px 15px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+    /* small */
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+    /* Medium */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+    /* Large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+    /* End Global Rules */
+/* end of global */
+/* start of card */
+
+.Card-options{
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 46px; 
+}
+.Card-content{
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 46px; 
+}
+.Card-content .Card-info h3{
+  font-size: 20px;
+  line-height: 67px;
+  font-weight: 800;
+}
+.Card-content .Card-info p {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 27px;
+  color: var(--graycolor);
+  font-weight: 400;
+}
+/* end of card */
 
 @keyframes App-logo-spin {
   from {
