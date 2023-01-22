@@ -32,7 +32,7 @@ function Test(){
     console.log({error,loading,data}); 
     return(
         <> 
-        <h2>Added items : {items.length}</h2>
+       
         <div className="test">
         <div className='container'>
         <div className='Card-options'>
@@ -49,6 +49,7 @@ function Test(){
       </div>
       </div>
         </div>
+        <h2>Added items : {items.length}</h2>
         </>
     )
 }

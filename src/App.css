@@ -1,4 +1,9 @@
 /* start of global  */
+  :root{
+    --mainfont:raleway;
+  }
+
+
 .App {
   text-align: center;
 }
@@ -23,7 +28,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -50,35 +54,64 @@
         width: 1170px;
     }
 }
-    /* End Global Rules */
+/* End Global Rules */
 /* end of global */
-/* start of card */
 
+/* start of Navbar */   
+  .Navbar{
+    position: relative;
+    width: 100%;
+  }
+  .categories ul{
+    position:absolute;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 36%;
+    font-family:var(--mainfont);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .icons{
+    position: relative;
+  }
+  .icons-data{
+    position: absolute;
+    right: 3%;
+  }
+/* end of Navbar */
+
+/* start of card */
 .Card-options{
   padding-top: 60px;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   grid-gap: 46px; 
 }
-.Card-content{
-  padding-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-  grid-gap: 46px; 
+.Card-content img{
+  width: 350px;
+  height: 400px;
 }
-.Card-content .Card-info h3{
-  font-size: 20px;
-  line-height: 67px;
-  font-weight: 800;
+.Card-info p{
+  font-family: var(--mainfont);
+  font-weight: 300;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  padding: 10px 0px 5px 20px;
 }
-.Card-content .Card-info p {
-  font-size: 15px;
-  letter-spacing: -1px;
-  line-height: 27px;
-  color: var(--graycolor);
-  font-weight: 400;
+.money{
+font-family: var(--mainfont);
+font-size: 18px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+padding: 5px 0px 0px 20px;
 }
 /* end of card */
+
 
 @keyframes App-logo-spin {
   from {
