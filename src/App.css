@@ -1,6 +1,7 @@
 /* start of global  */
   :root{
     --mainfont:raleway;
+    --greencolor:#5ECE7B;
   }
 
 
@@ -61,6 +62,7 @@
   .Navbar{
     position: relative;
     width: 100%;
+    padding-top: 50px;
   }
   .categories ul{
     position:absolute;
@@ -71,13 +73,43 @@
     font-family:var(--mainfont);
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
+  
   }
+  .categories ul li:is(:hover) {
+    border-bottom: 1px solid var(--greencolor) ;
+    padding-bottom: 10px;
+    color: var(--greencolor);
+    transition: 0.3s;
+  }
+
   .icons{
     position: relative;
+  }
+  .cart-number , .icons-data{
+    display: flex;
   }
   .icons-data{
     position: absolute;
     right: 3%;
+    align-items: center;
+  }
+  .icons-data svg{
+    font-size: 20px;
+    padding: 8px 0px 0px 10px  ;
+    cursor: pointer;
+  }
+
+  .cart-number p{
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(25px, -15px);
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 3px;
+    width: 17px;
   }
 /* end of Navbar */
 

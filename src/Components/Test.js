@@ -2,8 +2,6 @@ import React from "react";
 import {useQuery , gql} from "@apollo/client";
 
 import Cards from "./cards";
-import { useSelector } from "react-redux";
-
 const GET_CHARACTERS = gql 
 `query{
   categories{
@@ -24,7 +22,6 @@ const GET_CHARACTERS = gql
 }  
 ` ;
 function Test(){
-  const items=useSelector(state=>state.cart) //read the length of added items in the state of cart
     const {error,loading,data}= useQuery(GET_CHARACTERS);
     if(error) return <div> error</div>
     if(loading) return <div>loading</div>
@@ -32,7 +29,6 @@ function Test(){
     console.log({error,loading,data}); 
     return(
         <> 
-       
         <div className="test">
         <div className='container'>
         <div className='Card-options'>
@@ -49,7 +45,6 @@ function Test(){
       </div>
       </div>
         </div>
-        <h2>Added items : {items.length}</h2>
         </>
     )
 }
