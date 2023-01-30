@@ -12,7 +12,7 @@ export default function Cards(props) {
     {props.symbol} {props.price}
     </div>
     </div>
-    {/* <button onClick={()=>dispatch(addtocart(props.data))} >Add to cart</button>  */}
+    <button onClick={()=>dispatch(addtocart(props.data))} >Add to cart</button> 
     </div>
     
 )
